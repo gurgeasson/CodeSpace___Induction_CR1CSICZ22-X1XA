@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8 />
+        <title>Activity 1 - Vanilla JS DOM</title>
+    </head> 
+    <body>
+        <p id ='text'>Vanilla JS DOM</p> 
+        <div>
+            <button id="jsstyle" onclick="js_style()">Style</button>
+        </div>
+        
+        <script>
+            // define function to change an element's style
+            function js_style() {
+                // finds element by it's id (jsstyle) and adds green background
+                document.getElementById('text').style.backgroundColor = "green";
+                // finds element by it's id (jsstyle) and changes text coulour to white
+                document.getElementById('text').style.color = "white";
+            }
+        </script>
+        
+    </body>
+</html>

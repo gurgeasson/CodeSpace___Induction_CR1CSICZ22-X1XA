@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8 />
+        <title>Activity 2 - Vanilla JS DOM</title>
+    </head> 
+    <body>
+        <p id ='text'>Input radius value and get the volume of a sphere</p> 
+        <div>
+            Radius<br>
+            <input type="number" id="radius" value=""><br>
+            Volume<br>
+            <input type="number" id="volume" readonly><br>
+            <button id="sphereVolCalc" onclick="js_sphereVolume()">Calculate</button>
+        </div>
+        
+        <script>
+            // define function to take input Radius and calculate Volume of the sphere
+            function js_sphereVolume() {
+                // reads radius value from text box with id='radius'
+                let radius = document.getElementById('radius').value;
+                // calculate volume
+                let volume = 4 / 3 * Math.PI * radius ** 3;
+                // write volume in text box id='volume'
+                document.getElementById('volume').placeholder = volume;
+            }
+        </script>
+        
+    </body>
+</html>
